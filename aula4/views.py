@@ -3,4 +3,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html', {'nome': 'WebFuck', 'idade': 30})
+    return render(
+        request,
+        'aula4/index.html', {'nome': 'WebFuck', 'idade': 30})
