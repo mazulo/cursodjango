@@ -1,0 +1,25 @@
+table {
+	margin-bottom: 30px;
+}
+
+form#form {
+	width: 350px;
+	position: relative;
+}
+
+form#form button {
+	float: right;
+	margin-top: 15px;
+}
+
+form#form div.field_form {
+	overflow: hidden;
+}
+
+form#form div.field_form label {
+	vertical-align: sub;
+}
+
+form#form div.field_form input {
+	float: right;
+}

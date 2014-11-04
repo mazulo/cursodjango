@@ -11,17 +11,13 @@ urlpatterns = patterns(
     '',
     # url(r'^$', 'cursodjango.views.home', name='home'),
     # url(r'^cursodjango/', include('cursodjango.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^aula3/$', 'aula3.views.index', name='aula3_index'),
     url(r'^aula3/(?P<username>[\w@.]+)/$',
         'aula3.views.detail', name='aula_detail'),
     url(r'^aula4/$', 'aula4.views.index', name='aula4_index'),
     url(r'^aula6/$', 'aula6.views.index', name='aula6_index'),
+    url(r'^aula6/add/$', 'aula6.views.add_contato', name='aula6_add_contato'),
 )
 
 if settings.DEBUG:

@@ -69,9 +69,6 @@ STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
 STATIC_URL = '/static/'
 
 # Additional locations of static files
-STATICFILES_DIRS = (
-    ('site', os.path.join(PROJECT_PATH, 'sitestatic')),
-)
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -127,6 +124,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'aula3',
     'aula4',
+    'aula6',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+	Listagem de contatos
+{% endblock title %}
+{% block content %}
+{% if contatos %}
+	<h1>Lista de Contatos Cadastrados</h1>
+		<table class="pure-table">
+			<thead>
+				<tr>
+					<td>Nome</td>
+					<td>Sobrenome</td>
+					<td>Email</td>
+					<td>Twitter</td>
+				</tr>
+			</thead>
+			<tbody>
+			{% for contato in contatos %}
+				<tr>
+					<td>{{ contato.first_name }}</td>
+					<td>{{ contato.last_name }}</td>
+					<td>{{ contato.email }}</td>
+					<td>{{ contato.twitter }}</td>
+				</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+		<a href="/aula6/add/" class="pure-button pure-button-primary">Adicionar Contato</a>
+		<a href="" class="pure-button pure-button-primary">Editar Contato</a>
+	{% else %}
+	<p>Ainda não temos contatos cadastrados.</p>
+{% endif %}
+{% endblock content %}
